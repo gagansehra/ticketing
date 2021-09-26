@@ -2,6 +2,8 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 const start = async () => {
+    console.log("Starting Up ...");
+
     try{
         await mongoose.connect('mongodb://auth-mongo-srv:27017/auth');
         console.log("Connected Auth Service to MongoDB");
